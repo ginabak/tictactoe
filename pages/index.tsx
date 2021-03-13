@@ -1,5 +1,10 @@
 import { Grid } from "../components";
+import { GameProvider } from "../utilities/game";
 
 export default function Home() {
-	return <Grid />;
+	return (
+		<GameProvider>
+			<Grid />
+		</GameProvider>
+	);
 }
